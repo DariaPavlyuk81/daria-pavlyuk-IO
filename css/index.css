@@ -1,64 +1,85 @@
-.wrapper{
-    margin:0 auto;
-    width: 1000px;
+.wrapper {
+  margin: 0 auto;
+  width: 1000px;
 }
 body {
-    background-color: rgba(255, 228, 196, 0.281);
-    font-family:'Poppins',sans-serif;
-    border: 2px solid brown;
-    border-radius: 5px;
+  background-color: rgba(255, 228, 196, 0.281);
+  font-family: "Poppins", sans-serif;
 }
 h1 {
-    color: chocolate;
-    font-size: 50px;
-    font-weight: 60;
-    text-align: center;
-    font-family:cursive;
-    
+  color: chocolate;
+  font-size: 50px;
+  font-weight: 60;
+  text-align: center;
+  font-family: cursive;
 }
 h2 {
-    color: chocolate;
-    font-size: 35px;
-    font-weight: 200;
-    font-family: fantasy;
+  color: chocolate;
+  font-size: 35px;
+  font-weight: 200;
+  font-family: fantasy;
 }
 p {
-    color: rgba(160, 81, 45, 0.925);
-    font-size: 20px;
-    font-family: monospace;
-    
+  color: rgba(160, 81, 45, 0.925);
 
+  font-size: 20px;
+  font-family: monospace;
 }
 a {
-    color: rgba(160, 81, 45, 0.925);
-
-    
+  color: rgba(160, 81, 45, 0.925);
 }
 
-section{
-    text-align: center;
-    margin: 10px 20px 30px 40px
-
+section {
+  text-align: center;
+  margin: 10px 20px 30px 40px;
 }
-h1,h2,p{
-    background-color: blanchedalmond;
+h1,
+h2,
+p {
+  background-color: blanchedalmond;
 }
 ul {
-    list-style-type: none;
-    margin:0;
-    padding:0;
-
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 li {
-    display: inline;
-    color: rgba(160, 81, 45, 0.925);
-    
+  display: inline;
+  color: rgba(160, 81, 45, 0.925);
 }
 a {
-    display: block;
-    padding: 8px;
-    background-color:whitesmoke;
+  display: block;
+  padding: 8px;
+  background-color: whitesmoke;
+  text-decoration: none;
 }
-img{
-    border-radius:  8%;
+img {
+  border-radius: 8%;
+  width: 25%;
+  height: auto;
+  box-shadow: 10px 5px 10px grey;
+}
+.aboutMe {
+  padding: 1em;
+}
+#navbar a {
+  display: inline;
+  padding: 8px;
+  background-color: whitesmoke;
+  text-decoration: none;
+}
+ul.a {
+  list-style-type: circle;
+}
+.connect > a:link {
+  color: darkgoldenrod;
+}
+a:visited {
+  color: darkgoldenrod;
+}
+a:hover {
+  color: darkgoldenrod;
+}
+a:active {
+  color: darkgoldenrod;
 }
