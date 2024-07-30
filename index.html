@@ -7,33 +7,48 @@
     <meta name="author" content="Daria Pavlyuk" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Daria Pavlyuk Portfolio</title>
+    <link rel  = "preconnect" href ="https://fonts.googleapis.com">
+    <link href ="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel ="stylesheet" href = "css/index.css">
+    <link rel ="stylesheet" href ="css/media.css">
   </head>
   <body>
-    <!-- <img src="IMG_5301.jpeg" alt="Personal Photo"> -->
-    <h1 style="color: rgb(130, 207, 238)">Daria Pavlyuk</h1>
+    <nav id="navbar">
+      <ul>
+        <li><a href="#About">About</a></li>
+        <li><a href="#Experience">Experience</a></li>
+        <li><a href="#Connect">Connect</a></li>
+      </ul>
+  </nav>
+    <div class = "wrapper">
+<h1>Daria Pavlyuk</h1>
+    <img src="img/myphoto.jpeg" alt="Daria Personal Photo" />
     <section id="About">
-      <h2 style="color: rgb(130, 207, 238)">About:</h2>
-      <p>
+      <h2>About:</h2>
+      <p class="aboutMe">
         My name is Daria Pavlyuk. I am a QA Engineer. I <em>enjoy</em> testing
         Web Apps. I am a student at CTD. Coding is <strong>FUN </strong>!
       </p>
     </section>
     <section id="Experience">
-      <h2 style="color: rgb(130, 207, 238)">Experience:</h2>
-      <ul>
+      <h2>Experience:</h2>
+      <ul class="experience">
         <li>March, 2023 - until present - Utest.</li>
       </ul>
     </section>
     <section id="Connect">
-      <h2 style="color: rgb(130, 207, 238)">Connect:</h2>
-      <a href="https://www.linkedin.com/in/daria-pavlyuk" target="_blank">
-        Visit My LinkedIn </a
-      ><br />
-      <a href="mailto:pavlyuk.daria81@gmail.com" target="_blank">Send email</a>
+      <h2>Connect:</h2>
+      <ul style="list-style-type:none;"></ul>
+      <li><a href="https://www.linkedin.com/in/daria-pavlyuk" target="_blank">
+        Visit My LinkedIn </a>
+        </li>
       <br />
-      <a href="https://github.com/DariaPavlyuk81" target="_blank"
-        >Visit My Github</a
-      >
+      <li><a href="mailto:pavlyuk.daria81@gmail.com" target="_blank">Send email</a></li>
+      <br />
+      <li><a href="https://github.com/DariaPavlyuk81" target="_blank">
+        Visit My Github</a></li>
+      </ul>
     </section>
+    </div>
   </body>
 </html>
