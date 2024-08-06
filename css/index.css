@@ -67,7 +67,7 @@ img {
   height: auto;
   box-shadow: 10px 5px 10px #8a817c;
 }
-.aboutMe {
+.about-me {
   padding: 25px;
 }
 #navbar a {
@@ -95,11 +95,11 @@ a:active {
 
 .flex-container {
   display: inline-flex;
-  /* justify-content: space-around; */
+  justify-content: space-around; 
   flex-wrap: wrap;
   align-content: flex-start;
   overflow: scroll;
-  /* justify-content: space-evenly; */
+  
 }
 .flex-container > div {
   background-color: whitesmoke;
