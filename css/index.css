@@ -6,6 +6,7 @@ body {
    background-color: #efe5dcd8; 
   font-family: "Poppins", sans-serif;
   padding: 25px;
+  overflow: hidden;
   /* background-image: url("../img/beige.jpeg") ; */
 }
 h1 {
@@ -102,11 +103,14 @@ a:active {
 }
 
 .flex-container {
-  display: inline-flex;
-  justify-content: space-around; 
+  display: grid;
+  grid-template-rows: auto;
+  grid-gap: .5rem;
+  margin:.5rem 0;
+  /* justify-content: space-around; 
   flex-wrap: wrap;
   align-content: flex-start;
-  overflow: scroll;
+  overflow: scroll; */
   
 }
 .flex-container > div {
@@ -117,6 +121,22 @@ a:active {
   font: size 17px;
   border-radius: 15%;
   flex: 1 1 200px;
+}
+.fa{
+    font-size: 1.5rem;
+}
+.social-media{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 1rem;
+}
+.social-links{
+    display: flex;
+    flex-direction:column;
+    gap: 0.5rem;
+}
+.social-links > a{
+    width:auto;
 }
 @media only screen and (max-width: 768px){
     body{
@@ -130,5 +150,9 @@ a:active {
     }
     .about-me{
         padding:0;
+    }
+    .social-media{
+        grid-template-columns: 1fr;
+        gap: 0.5rem;
     }
 }
