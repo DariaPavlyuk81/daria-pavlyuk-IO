@@ -6,7 +6,7 @@ body {
    background-color: #efe5dcd8; 
   font-family: "Poppins", sans-serif;
   padding: 25px;
-  overflow: hidden;
+  
   /* background-image: url("../img/beige.jpeg") ; */
 }
 h1 {
@@ -103,14 +103,15 @@ a:active {
 }
 
 .flex-container {
-  display: grid;
+  /* display: grid;
   grid-template-rows: auto;
   grid-gap: .5rem;
-  margin:.5rem 0;
-  /* justify-content: space-around; 
+  margin:.5rem 0; */
+  display:inline-flex;
+  justify-content: space-around; 
   flex-wrap: wrap;
   align-content: flex-start;
-  overflow: scroll; */
+  overflow: scroll; 
   
 }
 .flex-container > div {
