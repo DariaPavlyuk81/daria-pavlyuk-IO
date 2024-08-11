@@ -135,24 +135,6 @@ overflow: scroll;
   width: auto;
 }
 
-/* styles for screens smaller than 768px */
-@media only screen and (max-width: 768px) {
-  body {
-    padding: 1rem;
-  }
-  .wrapper {
-    width: 100%;
-  }
-
-  p,
-  .about-me {
-    padding: 0;
-  }
-  .social-media {
-    grid-template-columns: 1fr;
-    gap: 1rem;
-  }
-}
 
 .social-links > a:link {
   color: #463f3a;
@@ -195,7 +177,7 @@ a:active {
   }
 }
 /* for screens larger than 1200px */
-@media only screen and (max-width: 1200px) {
+@media only screen and (min-width: 1200px) {
   h1 {
     font: size 65px;
     color: skyblue;
@@ -210,17 +192,40 @@ a:active {
 
   p,
   .about-me {
-    padding: 1rem;
+    padding: 2rem;
+    background-color: burlywood;
   }
   .social-media {
-    grid-template-columns: 2fr 1fr;
-    gap: 1rem;
+    grid-template-columns: 1fr;
+    gap: 2rem;
   }
   .grid-container > div{
     gap: 15px;
+    
   }
 }
 
+/* styles for screens smaller than 768px */
+@media only screen and (max-width: 768px) {
+    body {
+      padding: 1rem;
+      
+    }
+    .wrapper {
+      width: 100%;
+    }
+  
+    p,
+    .about-me {
+      padding: 0;
+      color:#d816df
+    }
+    .social-media {
+      grid-template-columns: 1fr;
+      gap: 1rem;
+    }
+  }
+  
 .item-1 {
   grid-area: name;
 }
