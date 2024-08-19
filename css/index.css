@@ -152,15 +152,16 @@ a:active {
   color: #e76c15;
 }
 
-/* syles for smaller than 600px */
-@media only screen and (max-width: 600px) {
-    /* header change */
+/* syles for smaller than 600px - Mobile phones */
+@media only screen and (min-width: 600px) {
+    
     h1 {
-      font: size 40px;
+      font-size: 2.5rem;
       color: #8a817c;
     }
     body {
-      padding: 0.5rem;
+      padding: 2rem;
+      font-size: 1.25rem;
     }
     .wrapper {
       width: 100%;
@@ -169,7 +170,7 @@ a:active {
     p,
     .about-me {
       padding: 0;
-      color: rgb(202, 34, 34);
+      color: rgb(133, 119, 119);
     }
     .social-media {
       grid-template-columns: 1fr;
@@ -177,8 +178,8 @@ a:active {
     }
   }
 
-/* styles for screens smaller than 768px */
-@media only screen and (max-width: 768px) {
+/* styles for screens tablets*/
+@media only screen and (min-width: 768px) {
     body {
       padding: 1rem;
       
@@ -190,21 +191,21 @@ a:active {
     p,
     .about-me {
       padding: 0;
-      color:#d816df
+      color:#0e0e01d9
     }
     .social-media {
       grid-template-columns: 1fr;
       gap: 1rem;
     }
   }
-  /* for screens larger than 1200px */
-@media only screen and (min-width: 769px) {
+  /* for screens laptops */
+@media only screen and (min-width: 992px) {
     h1 {
-      font: size 65px;
-      color: skyblue;
+      font-size: 2.5rem;
+      color: rgb(14, 26, 31);
     }
     body {
-      padding: 2rem;
+      padding: 3rem;
     }
     .wrapper {
       max-width: 1200px;
@@ -214,7 +215,7 @@ a:active {
     p,
     .about-me {
       padding: 2rem;
-      background-color: burlywood;
+      background-color: rgb(241, 193, 130);
     }
     .social-media {
       grid-template-columns: 1fr;
