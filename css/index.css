@@ -3,10 +3,10 @@
   width: 1000px;
 }
 body {
-   background-color: #efe5dcd8; 
+  background-color: #efe5dcd8;
   font-family: "Poppins", sans-serif;
   padding: 25px;
-  
+
   /* background-image: url("../img/beige.jpeg") ; */
 }
 h1 {
@@ -22,13 +22,13 @@ h2 {
   color: #463f3a;
   font-size: 35px;
   font-weight: 200;
-  font-family: fantasy;
+  font-family: modern;
   padding: 25;
 }
 p {
-  color: #8a817c;
+  color: #131211;
   font-size: 20px;
-  font-family: monospace;
+  font-family: modern;
   padding: 25px;
 }
 a {
@@ -43,8 +43,6 @@ h1,
 h2,
 p {
   background-color: #efe5dc;
-  
-
 }
 ul {
   list-style-type: none;
@@ -62,6 +60,12 @@ a {
   padding: 8px;
   background-color: whitesmoke;
   text-decoration: none;
+  
+}
+.accent-color {
+  color: #010101;
+  font-family: cursive;
+  font-size: 20px;
 }
 
 img {
@@ -74,86 +78,170 @@ img {
 .about-me {
   padding: 25px;
 }
-nav > ul{
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
+nav > ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: initial;
+  
 }
 #navbar a {
-  display: inline;
+  display: flex;
   padding: 8px;
   background-color: #efe5dc;
   text-decoration: none;
-  text-align: center;
 }
 ul.a {
   list-style-type: circle;
 }
-.connect > a:link {
-  color: #463f3a;
-}
-a:visited {
-  color: #463f3a;
-}
-a:hover {
-  color: #463f3a;
-}
-a:active {
-  color: #463f3a;
-}
 
-.flex-container {
-  /* display: grid;
+/* .flex-container {
+  display: grid;
   grid-template-rows: auto;
   grid-gap: .5rem;
   margin:.5rem 0; */
-  display:inline-flex;
-  justify-content: space-around; 
-  flex-wrap: wrap;
-  align-content: flex-start;
-  overflow: scroll; 
+display: inline-flex;
+justify-content: space-around;
+flex-wrap: wrap;
+align-content: flex-start;
+overflow: scroll;
+
+*/
+
+.fa {
+  font-size: 1.5rem;
+}
+.social-media {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 1rem;
+}
+.social-links {
+  display: grid;
+  grid-template-columns: columns ;
+  gap: 0.5rem;
+  text-align: center;
+}
+.social-links > a {
+  width: auto;
+}
+
+
+.social-links > a:link {
+  color: #463f3a;
+}
+a:visited {
+  color: hsla(240, 82%, 46%, 0.947);
+}
+a:focus {
+  color: #d816df;
+}
+a:hover {
+  color: #8ee8bb;
+}
+a:active {
+  color: #e76c15;
+}
+
+/* syles for smaller than 600px - Mobile phones */
+@media only screen and (min-width: 375) {
+    
+    h1 {
+      font-size: 2.5rem;
+      color: #8a817c;
+    }
+    body {
+      padding: 2rem;
+      font-size: 1.25rem;
+    }
+    .wrapper {
+      width: 100%;
+    }
   
-}
-.flex-container > div {
-  background-color: whitesmoke;
-  margin: 10px;
-  padding: 12px;
-  line-height: 12px;
-  font: size 17px;
-  border-radius: 15%;
-  flex: 1 1 200px;
-}
-.fa{
-    font-size: 1.5rem;
-}
-.social-media{
-    display:grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    gap: 1rem;
-}
-.social-links{
-    display: flex;
-    flex-direction:column;
-    gap: 0.5rem;
-}
-.social-links > a{
-    width:auto;
-}
-@media only screen and (max-width: 768px){
-    body{
-        padding: 1rem;
+    p,
+    .about-me {
+      padding: 0;
+      color: rgb(133, 119, 119);
     }
-    .wrapper{
-        width: 100%;
+    .social-media {
+      grid-template-columns: 1fr;
+      gap: 0.25rem;
     }
-    p{
-        padding: 0;
+  }
+
+/* styles for screens tablets*/
+@media only screen and (min-width: 768px) {
+    body {
+      padding: 1rem;
+      
     }
-    .about-me{
-        padding:0;
+    .wrapper {
+      width: 100%;
     }
-    .social-media{
-        grid-template-columns: 1fr;
-        gap: 0.5rem;
+  
+    p,
+    .about-me {
+      padding: 0;
+      color:#0e0e01d9
     }
+    .social-media {
+      grid-template-columns: 1fr;
+      gap: 1rem;
+    }
+  }
+  /* for screens laptops */
+@media only screen and (min-width: 992px) {
+    h1 {
+      font-size: 2.5rem;
+      color: rgb(14, 26, 31);
+    }
+    body {
+      padding: 3rem;
+    }
+    .wrapper {
+      max-width: 1200px;
+      margin: auto;
+    }
+  
+    p,
+    .about-me {
+      padding: 2rem;
+      background-color: rgb(241, 193, 130);
+    }
+    .social-media {
+      grid-template-columns: 1fr;
+      gap: 2rem;
+    }
+    .grid-container > div{
+      gap: 15px;
+      
+    }
+  }
+  
+.item-1 {
+  grid-area: name;
+}
+.item-2 {
+  grid-area: job;
+}
+.item-3 {
+  grid-area: date;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    "name job job job job job"
+    "name job job job job job"
+    "name date date date date date";
+  gap: 10px;
+  background-color: rgb(236, 221, 221);
+  padding: 10px;
+}
+
+.grid-container > div {
+  background-color: bisque ;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 17px;
 }
