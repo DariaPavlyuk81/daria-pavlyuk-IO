@@ -107,15 +107,6 @@ align-content: flex-start;
 overflow: scroll;
 
 */
-/* .flex-container > div {
-  background-color: whitesmoke;
-  margin: 10px;
-  padding: 12px;
-  line-height: 12px;
-  font: size 17px;
-  border-radius: 15%;
-  flex: 1 1 200px;
-} */
 
 .fa {
   font-size: 1.5rem;
@@ -153,7 +144,7 @@ a:active {
 }
 
 /* syles for smaller than 600px - Mobile phones */
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 375) {
     
     h1 {
       font-size: 2.5rem;
