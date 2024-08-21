@@ -2,12 +2,19 @@
   margin: 0 auto;
   width: 1000px;
 }
+.img-banner { 
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin:10px;
+  
+}
 body {
   background-color: #efe5dcd8;
   font-family: "Poppins", sans-serif;
-  padding: 25px;
+  padding: 10px;
 
-  /* background-image: url("../img/beige.jpeg") ; */
+  
 }
 h1 {
   color: #463f3a;
@@ -17,6 +24,8 @@ h1 {
   font-family: cursive;
   padding: 25px 0;
   margin-bottom: 25px;
+  line-height: 44px;
+  
 }
 h2 {
   color: #463f3a;
@@ -24,12 +33,15 @@ h2 {
   font-weight: 200;
   font-family: modern;
   padding: 25;
+  line-height: 24px;
+  
 }
 p {
   color: #131211;
   font-size: 20px;
   font-family: modern;
   padding: 25px;
+  
 }
 a {
   color: #8a817c;
@@ -100,7 +112,7 @@ ul.a {
   grid-template-rows: auto;
   grid-gap: .5rem;
   margin:.5rem 0; */
-display: inline-flex;
+/*display: inline-flex;
 justify-content: space-around;
 flex-wrap: wrap;
 align-content: flex-start;
@@ -169,7 +181,7 @@ a:active {
     p,
     .about-me {
       padding: 0;
-      color: rgb(202, 34, 34);
+      color: rgb(233, 180, 180);
     }
     .social-media {
       grid-template-columns: 1fr;
@@ -190,7 +202,7 @@ a:active {
     p,
     .about-me {
       padding: 0;
-      color:#d816df
+      color:#6f5170
     }
     .social-media {
       grid-template-columns: 1fr;
@@ -214,7 +226,7 @@ a:active {
     p,
     .about-me {
       padding: 2rem;
-      background-color: burlywood;
+      background-color: rgb(241, 231, 218);
     }
     .social-media {
       grid-template-columns: 1fr;
