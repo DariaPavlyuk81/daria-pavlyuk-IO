@@ -22,11 +22,11 @@ footer.append(copyright);
 
 
 // skills section
-const skills =["JavaScript", "HTML",  "CSS", "GitHUb"];
+const skills =["JavaScript", "HTML",  "CSS", "GitHub"];
 
 
 //skills + DOM
-const skillsSection = document.querySelector("#skills");
+const skillsSection = document.querySelector("#skills-section");
 
 const skillsList = skillsSection.getElementsByTagName("ul")[0];
 
