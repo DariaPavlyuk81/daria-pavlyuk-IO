@@ -2,12 +2,19 @@
   margin: 0 auto;
   width: 1000px;
 }
+.img-banner { 
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin:10px;
+  
+}
 body {
   background-color: #efe5dcd8;
   font-family: "Poppins", sans-serif;
-  padding: 25px;
+  padding: 10px;
 
-  /* background-image: url("../img/beige.jpeg") ; */
+  
 }
 h1 {
   color: #463f3a;
@@ -17,6 +24,8 @@ h1 {
   font-family: cursive;
   padding: 25px 0;
   margin-bottom: 25px;
+  line-height: 44px;
+  
 }
 h2 {
   color: #463f3a;
@@ -24,12 +33,15 @@ h2 {
   font-weight: 200;
   font-family: modern;
   padding: 25;
+  line-height: 24px;
+  
 }
 p {
   color: #131211;
   font-size: 20px;
   font-family: modern;
   padding: 25px;
+  
 }
 a {
   color: #8a817c;
@@ -42,7 +54,7 @@ section {
 h1,
 h2,
 p {
-  background-color: #efe5dc;
+  background-color: #f0d9c5;
 }
 ul {
   list-style-type: none;
@@ -58,7 +70,7 @@ li {
 a {
   display: block;
   padding: 8px;
-  background-color: whitesmoke;
+  background-color: rgb(247, 234, 234);
   text-decoration: none;
   
 }
@@ -88,7 +100,7 @@ nav > ul {
 #navbar a {
   display: flex;
   padding: 8px;
-  background-color: #efe5dc;
+  background-color: #f1c9a6;
   text-decoration: none;
 }
 ul.a {
@@ -100,7 +112,7 @@ ul.a {
   grid-template-rows: auto;
   grid-gap: .5rem;
   margin:.5rem 0; */
-display: inline-flex;
+/*display: inline-flex;
 justify-content: space-around;
 flex-wrap: wrap;
 align-content: flex-start;
@@ -161,7 +173,8 @@ a:active {
     p,
     .about-me {
       padding: 0;
-      color: rgb(133, 119, 119);
+
+      color: rgb(233, 180, 180);
     }
     .social-media {
       grid-template-columns: 1fr;
@@ -182,7 +195,9 @@ a:active {
     p,
     .about-me {
       padding: 0;
-      color:#0e0e01d9
+
+      color:#6f5170
+
     }
     .social-media {
       grid-template-columns: 1fr;
@@ -192,8 +207,10 @@ a:active {
   /* for screens laptops */
 @media only screen and (min-width: 992px) {
     h1 {
-      font-size: 2.5rem;
-      color: rgb(14, 26, 31);
+
+      font-size: 65px;
+      color: rgb(97, 102, 104);
+
     }
     body {
       padding: 3rem;
@@ -206,7 +223,9 @@ a:active {
     p,
     .about-me {
       padding: 2rem;
-      background-color: rgb(241, 193, 130);
+
+      background-color: rgb(241, 231, 218);
+
     }
     .social-media {
       grid-template-columns: 1fr;
@@ -244,4 +263,11 @@ a:active {
   text-align: center;
   padding: 20px 0;
   font-size: 17px;
+}
+#skills-list{
+    list-style-type: none;
+    padding: 0;
+}
+#skills-list li {
+    margin:10px;
 }
