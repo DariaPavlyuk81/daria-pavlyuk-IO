@@ -119,15 +119,6 @@ align-content: flex-start;
 overflow: scroll;
 
 */
-/* .flex-container > div {
-  background-color: whitesmoke;
-  margin: 10px;
-  padding: 12px;
-  line-height: 12px;
-  font: size 17px;
-  border-radius: 15%;
-  flex: 1 1 200px;
-} */
 
 .fa {
   font-size: 1.5rem;
@@ -164,15 +155,16 @@ a:active {
   color: #e76c15;
 }
 
-/* syles for smaller than 600px */
-@media only screen and (max-width: 600px) {
-    /* header change */
+/* syles for smaller than 600px - Mobile phones */
+@media only screen and (min-width: 375) {
+    
     h1 {
-      font: size 40px;
+      font-size: 2.5rem;
       color: #8a817c;
     }
     body {
-      padding: 0.5rem;
+      padding: 2rem;
+      font-size: 1.25rem;
     }
     .wrapper {
       width: 100%;
@@ -181,6 +173,7 @@ a:active {
     p,
     .about-me {
       padding: 0;
+
       color: rgb(233, 180, 180);
     }
     .social-media {
@@ -189,8 +182,8 @@ a:active {
     }
   }
 
-/* styles for screens smaller than 768px */
-@media only screen and (max-width: 768px) {
+/* styles for screens tablets*/
+@media only screen and (min-width: 768px) {
     body {
       padding: 1rem;
       
@@ -202,21 +195,25 @@ a:active {
     p,
     .about-me {
       padding: 0;
+
       color:#6f5170
+
     }
     .social-media {
       grid-template-columns: 1fr;
       gap: 1rem;
     }
   }
-  /* for screens larger than 1200px */
-@media only screen and (min-width: 769px) {
+  /* for screens laptops */
+@media only screen and (min-width: 992px) {
     h1 {
-      font: size 65px;
+
+      font-size: 65px;
       color: rgb(97, 102, 104);
+
     }
     body {
-      padding: 2rem;
+      padding: 3rem;
     }
     .wrapper {
       max-width: 1200px;
@@ -226,7 +223,9 @@ a:active {
     p,
     .about-me {
       padding: 2rem;
+
       background-color: rgb(241, 231, 218);
+
     }
     .social-media {
       grid-template-columns: 1fr;
