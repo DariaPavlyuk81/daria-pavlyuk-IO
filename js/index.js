@@ -64,18 +64,13 @@ function onFormSubmit(event){
     event.preventDefault();
     const data = new FormData(event.target);
     const userName = data.get("usersName");
-    const email = data.get("usersEmail");
+    const email = data.get("email");
     const userMessage = data.get("usersMessage");
 
     //display message beneath messages section
     const messageSection = document.getElementById("messages");
     const messageList = messageSection.querySelector("ul");
 
-// //display the message section
-// messageSection.hidden = false;
-// const newMessage = document.createElement("LI");
-// new String = `<a href="mailto:${email}">${userName}</a>\n<span>${userMessage}</span>`;
-// newMessage.innerHTML = newString;
 
 
 //display the message section
@@ -117,7 +112,7 @@ event.target.reset();
 
 
 //find the leave messages from and add callback for submit
-const messageForm = document.getElementsById("messageForm");
-messageForm.addEventListener("submit",onFormSubmit);
+//const messageForm = document.getElementsById("messageForm");
+//messageForm.addEventListener("submit",onFormSubmit);
 
 }
