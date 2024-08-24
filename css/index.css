@@ -2,19 +2,11 @@
   margin: 0 auto;
   width: 1000px;
 }
-.img-banner { 
-  display: block;
-  width: 100%;
-  padding: 10px;
-  margin:10px;
-  
-}
+
 body {
   background-color: #efe5dcd8;
   font-family: "Poppins", sans-serif;
   padding: 10px;
-
-  
 }
 h1 {
   color: #463f3a;
@@ -25,7 +17,6 @@ h1 {
   padding: 25px 0;
   margin-bottom: 25px;
   line-height: 44px;
-  
 }
 h2 {
   color: #463f3a;
@@ -34,14 +25,12 @@ h2 {
   font-family: modern;
   padding: 25;
   line-height: 24px;
-  
 }
 p {
   color: #131211;
   font-size: 20px;
   font-family: modern;
   padding: 25px;
-  
 }
 a {
   color: #8a817c;
@@ -72,7 +61,6 @@ a {
   padding: 8px;
   background-color: rgb(247, 234, 234);
   text-decoration: none;
-  
 }
 .accent-color {
   color: #010101;
@@ -95,7 +83,6 @@ nav > ul {
   flex-direction: row;
   justify-content: center;
   gap: initial;
-  
 }
 #navbar a {
   display: flex;
@@ -130,14 +117,13 @@ overflow: scroll;
 }
 .social-links {
   display: grid;
-  grid-template-columns: columns ;
+  grid-template-columns: columns;
   gap: 0.5rem;
   text-align: center;
 }
 .social-links > a {
   width: auto;
 }
-
 
 .social-links > a:link {
   color: #463f3a;
@@ -155,88 +141,81 @@ a:active {
   color: #e76c15;
 }
 
-/* syles for smaller than 600px - Mobile phones */
+/* syles for - Mobile phones */
 @media only screen and (min-width: 375) {
-    
-    h1 {
-      font-size: 2.5rem;
-      color: #8a817c;
-    }
-    body {
-      padding: 2rem;
-      font-size: 1.25rem;
-    }
-    .wrapper {
-      width: 100%;
-    }
-  
-    p,
-    .about-me {
-      padding: 0;
-
-      color: rgb(233, 180, 180);
-    }
-    .social-media {
-      grid-template-columns: 1fr;
-      gap: 0.25rem;
-    }
+  h1 {
+    font-size: 2.5rem;
+    color: #8a817c;
   }
+  body {
+    padding: 2rem;
+    font-size: 1.25rem;
+  }
+  .wrapper {
+    width: 100%;
+  }
+
+  p,
+  .about-me {
+    padding: 0;
+
+    color: rgb(233, 180, 180);
+  }
+  .social-media {
+    grid-template-columns: 1fr;
+    gap: 0.25rem;
+  }
+}
 
 /* styles for screens tablets*/
 @media only screen and (min-width: 768px) {
-    body {
-      padding: 1rem;
-      
-    }
-    .wrapper {
-      width: 100%;
-    }
-  
-    p,
-    .about-me {
-      padding: 0;
-
-      color:#6f5170
-
-    }
-    .social-media {
-      grid-template-columns: 1fr;
-      gap: 1rem;
-    }
+  body {
+    padding: 1rem;
   }
-  /* for screens laptops */
+  .wrapper {
+    width: 100%;
+  }
+
+  p,
+  .about-me {
+    padding: 0;
+
+    color: #6f5170;
+  }
+  .social-media {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+}
+/* for screens laptops */
 @media only screen and (min-width: 992px) {
-    h1 {
-
-      font-size: 65px;
-      color: rgb(97, 102, 104);
-
-    }
-    body {
-      padding: 3rem;
-    }
-    .wrapper {
-      max-width: 1200px;
-      margin: auto;
-    }
-  
-    p,
-    .about-me {
-      padding: 2rem;
-
-      background-color: rgb(241, 231, 218);
-
-    }
-    .social-media {
-      grid-template-columns: 1fr;
-      gap: 2rem;
-    }
-    .grid-container > div{
-      gap: 15px;
-      
-    }
+  h1 {
+    font-size: 65px;
+    color: rgb(97, 102, 104);
   }
-  
+  body {
+    padding: 3rem;
+  }
+  .wrapper {
+    max-width: 1200px;
+    margin: auto;
+  }
+
+  p,
+  .about-me {
+    padding: 2rem;
+
+    background-color: rgb(241, 231, 218);
+  }
+  .social-media {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  .grid-container > div {
+    gap: 15px;
+  }
+}
+
 .item-1 {
   grid-area: name;
 }
@@ -259,15 +238,15 @@ a:active {
 }
 
 .grid-container > div {
-  background-color: bisque ;
+  background-color: bisque;
   text-align: center;
   padding: 20px 0;
   font-size: 17px;
 }
-#skills-list{
-    list-style-type: none;
-    padding: 0;
+#skills-list {
+  list-style-type: none;
+  padding: 0;
 }
 #skills-list li {
-    margin:10px;
+  margin: 10px;
 }
