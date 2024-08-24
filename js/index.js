@@ -1,7 +1,6 @@
 //create a footer element
 const footer = document.createElement ("footer");
-// footer.className = "footer";
-// footer.setAttribute("id","myfooter");
+
 document.body.appendChild(footer);
 
 const today = new Date();
@@ -64,13 +63,13 @@ function onRemoveButton(event) {
 function onFormSubmit(event){
     event.preventDefault();
     const data = new FormData(event.target);
-    const userName = data.get("userName");
-    const email = data.get("email");
-    const userMessage = data.get("userMessage");
+    const userName = data.get("usersName");
+    const email = data.get("usersEmail");
+    const userMessage = data.get("usersMessage");
 
     //display message beneath messages section
     const messageSection = document.getElementById("messages");
-    const messageList = messageSection.getElementsByTagName("ul");
+    const messageList = messageSection.querySelector("ul");
 
 // //display the message section
 // messageSection.hidden = false;
@@ -92,7 +91,8 @@ const removeButton = document.createElement("button");
 removeButton.textContent = "Remove";
 removeButton.type ="button";
 removeButton.classList.add("remove-button");
-removeButton.checkValiditylastName = "remove-button";
+removeButton.name = "remove-button";
+//removeButton.checkValiditylastName = "remove-button";
 
 //add even listener
 removeButton.addEventListener("click",(event)=>{
@@ -101,7 +101,7 @@ removeButton.addEventListener("click",(event)=>{
 
     const messageSection = document.getElementById ("messages");
     const messageList = messageSection.getElementsByTagName("ul");
-    if (messageList.length=== 0){
+    if (messageList.children.length=== 0){
         messageSection.hidden =true;
     }
 });
@@ -117,6 +117,7 @@ event.target.reset();
 
 
 //find the leave messages from and add callback for submit
-const messageForms = document.getElementsByName("leave_message");
+const messageForm = document.getElementsById("messageForm");
+messageForm.addEventListener("submit",onFormSubmit);
 
 }
