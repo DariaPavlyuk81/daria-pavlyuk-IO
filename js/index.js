@@ -82,7 +82,8 @@ function onFormSubmit(event){
 //display the message section
 messageSection.hidden = false;
 const newMessage = document.createElement("li");
-const newMessageContent = <><a href="mailto:${email}">${userName}</a><span>${userMessage}</span></>
+const newMessageContent = `<a href="mailto:${email}">${userName}</a>
+<span>${userMessage}</span>`;
 newMessage.innerHTML = newMessageContent;
 
 
@@ -90,11 +91,20 @@ newMessage.innerHTML = newMessageContent;
 const removeButton = document.createElement("button");
 removeButton.textContent = "Remove";
 removeButton.type ="button";
-removeButton.checkValiditylassName = "remove-button";
+removeButton.classList.add("remove-button");
+removeButton.checkValiditylastName = "remove-button";
 
-//removeButton.setAttribute("type","button");
-//removeButton.setAttribute("id","removeButtonId");
-removeButton.addEventListener("click",onRemoveButton);
+//add even listener
+removeButton.addEventListener("click",(event)=>{
+    const entry = event.target.parentNode;
+    entry.remove();
+
+    const messageSection = document.getElementById ("messages");
+    const messageList = messageSection.getElementsByTagName("ul");
+    if (messageList.length=== 0){
+        messageSection.hidden =true;
+    }
+});
 
 
 //Add remove Button
