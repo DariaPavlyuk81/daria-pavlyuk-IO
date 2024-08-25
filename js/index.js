@@ -65,7 +65,7 @@ function onFormSubmit(event){
     const formData = new FormData(event.target);
 
     const userName = formData.get("usersName");
-    const email = formData.get("email");
+    const email = formData.get("usersEmail");
     const userMessage = formData.get("usersMessage");
 
     //display message beneath messages section
