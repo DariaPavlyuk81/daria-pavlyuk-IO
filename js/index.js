@@ -88,7 +88,7 @@ removeButton.textContent = "Remove";
 removeButton.type ="button";
 removeButton.classList.add("remove-button");
 removeButton.name = "remove-button";
-//removeButton.checkValiditylastName = "remove-button";
+
 
 //add even listener
 removeButton.addEventListener("click",(event)=>{
@@ -112,8 +112,6 @@ messageList.appendChild(newMessage);
 event.target.reset();
 
 
-//find the leave messages from and add callback for submit
-//const messageForm = document.getElementsById("messageForm");
-//messageForm.addEventListener("submit",onFormSubmit);
+
 
 }

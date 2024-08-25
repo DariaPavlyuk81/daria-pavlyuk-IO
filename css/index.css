@@ -250,3 +250,53 @@ a:active {
 #skills-list li {
   margin: 10px;
 }
+form{
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 8px;
+  background-color:#f9f9f9;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1)
+}
+
+form label{
+  display:block;
+  margin-bottom:5 px;
+  font-size: 1 rem;
+  color:#333;
+}
+#messages{
+  margin:20px auto;
+  padding:20px;
+  border-radius:8px;
+  background-color: #f4f4f4;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+#messages h2{
+  font-size:1.5 rem;
+  color:#333;
+  margin-bottom:20px;
+  text-align: center;
+}
+.message-container{
+  overflow-y:auto;
+}
+#message-list{
+  list-style-type:none;
+  padding:0;
+  margin:0;
+
+}
+#message-list li span{
+  display: block;
+
+}
+#message-list li button{
+  background-color: #f0d9c5;
+  color:#f4f4f4;
+  border:none;
+  padding:5px 10px;
+  border-radius:4px;
+  cursor:pointer;
+  font-size:0.875;
+
+}
