@@ -62,10 +62,11 @@ function onRemoveButton(event) {
 //callback for submit
 function onFormSubmit(event){
     event.preventDefault();
-    const data = new FormData(event.target);
-    const userName = data.get("usersName");
-    const email = data.get("email");
-    const userMessage = data.get("usersMessage");
+    const formData = new FormData(event.target);
+
+    const userName = formData.get("usersName");
+    const email = formData.get("email");
+    const userMessage = formData.get("usersMessage");
 
     //display message beneath messages section
     const messageSection = document.getElementById("messages");
