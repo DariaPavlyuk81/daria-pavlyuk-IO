@@ -47,36 +47,29 @@ const messageForm= messageForms[0];
 //Attach the listener
 messageForm.addEventListener("submit", onFormSubmit);
 
-//callback for remove button
-function onRemoveButton(event) {
-    const entry =event.target.parentNode;
-    entry.remove();
-
-    const messageSection = document.getElementById("messages");
-    const messageList = messageSection. getElementsByTagName("li");
-    if (messageList.length === 0){
-        messageSection.hidden = true;
-
-    }
-}
 //callback for submit
 function onFormSubmit(event){
     event.preventDefault();
+
     const formData = new FormData(event.target);
 
     const userName = formData.get("usersName");
     const email = formData.get("usersEmail");
     const userMessage = formData.get("usersMessage");
+    
 
-    //display message beneath messages section
     const messageSection = document.getElementById("messages");
-    const messageList = messageSection.querySelector("ul");
+
+    messageSection.style.display = "block";
+
+//display message beneath messages section
+const messageList = messageSection.querySelector("ul");
 
 
+    //display the message section
 
-//display the message section
-messageSection.hidden = false;
 const newMessage = document.createElement("li");
+newMessage.classList.add("message-list");
 const newMessageContent = `<a href="mailto:${email}">${userName}</a>
 <span>${userMessage}</span>`;
 newMessage.innerHTML = newMessageContent;
@@ -90,15 +83,15 @@ removeButton.classList.add("remove-button");
 removeButton.name = "remove-button";
 
 
-//add even listener
+//add event listener
 removeButton.addEventListener("click",(event)=>{
     const entry = event.target.parentNode;
     entry.remove();
 
     const messageSection = document.getElementById ("messages");
-    const messageList = messageSection.getElementsByTagName("ul");
+    const messageList = messageSection.getElementsByTagName("ul")[0];
     if (messageList.children.length=== 0){
-        messageSection.hidden =true;
+        messageSection.style.display ="none";
     }
 });
 
@@ -111,7 +104,42 @@ messageList.appendChild(newMessage);
 //reset the form
 event.target.reset();
 
+//callback for remove button
+function onRemoveButton(event) {
+    const entry =event.target.parentNode;
+    entry.remove();
+
+    const messageSection = document.getElementById("messages");
+    const messageList = messageSection. getElementsByTagName("li");
+    if (messageList.length === 0){
+        messageSection.style.display = "none";
+
+    }
+}
+
+
+    
 
 
 
+
+
+
+
+
+
+
+
+
+}
+//callback for remove button
+function onRemoveButton(event){
+    const entry = event.target.parentNode;
+    entry.remove();
+
+    const messageSection = document.getElementById("messages");
+    const messageList = messageSection.getElementsByTagName("li");
+    if (messageList.length === 0){
+        messageSection.style.display = "none";
+    }
 }
