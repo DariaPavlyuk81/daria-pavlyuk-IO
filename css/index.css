@@ -1,43 +1,81 @@
-.wrapper {
-  margin: 0 auto;
-  width: 1000px;
-}
+/*base styles (Mobiles)*/
+/* styles for - Mobile phones */
+@media only screen and (min-width: 375){
 
 body {
   background-color: #efe5dcd8;
   font-family: "Poppins", sans-serif;
   padding: 10px;
+  font-size: 1 rem;
 }
+
+.wrapper {
+  margin: 0 auto;
+  width: 1000px;
+}
+
 h1 {
+  
   color: #463f3a;
+<<<<<<< HEAD
   font-size: 50px;
   font-weight: 60;
   text-align: left;
+=======
+  font-size: 2.5rem;
+  font-weight: 600;
+  text-align: center;
+>>>>>>> origin/lesson-14
   font-family: cursive;
   padding: 25px 0;
   margin-bottom: 25px;
-  line-height: 44px;
+  line-height: 2.5rem;
+  background-color: #f0d9c5;
 }
+
 h2 {
-  color: #463f3a;
-  font-size: 35px;
+  color: #8a817c;
+  font-size: 1.75rem;
+  font-family: "Modern",sans-serif;
+  padding: 25px;
+  line-height: 1.5rem;
+  background-color: #f0d9c5;
   font-weight: 200;
+<<<<<<< HEAD
   font-family: modern;
   padding: 25px 0;
   line-height: 24px;
   text-align:left;
   margin-bottom: auto;
+=======
+>>>>>>> origin/lesson-14
 }
+
+
 p {
   color: #131211;
-  font-size: 20px;
-  font-family: modern;
+  font-size: 1.25rem;
+  font-family: "Modern",sans-serif;
   padding: 25px;
+  background-color: #f0d9c5;
 }
+
+
 a {
+  color: #8a817c;
+  display: block;
+  padding: 8px;
+  background-color: rgb(247, 234, 234);
+  text-decoration: none;
+}
+
+
+li {
+  display: block;
   color: #8a817c;
 }
 
+<<<<<<< HEAD
 section {
   text-align: left;
   margin: 25px;
@@ -58,7 +96,10 @@ li {
   display: inline;
   color: #8a817c;
 }
+=======
+>>>>>>> origin/lesson-14
 a {
+  color: #8a817c;
   display: block;
   padding: 8px;
   background-color: rgb(247, 234, 234);
@@ -69,11 +110,18 @@ a {
   font-family: cursive;
   font-size: 20px;
 }
-
+section{
+  text-align: center;
+  margin:25px;
+}
 img {
   float:inline-end;
   border-radius: 8%;
+<<<<<<< HEAD
   width: 20%;
+=======
+  width: 100%;
+>>>>>>> origin/lesson-14
   height: auto;
   box-shadow: 10px 5px 10px #8a817c;
 }
@@ -96,18 +144,6 @@ ul.a {
   list-style-type: circle;
 }
 
-/* .flex-container {
-  display: grid;
-  grid-template-rows: auto;
-  grid-gap: .5rem;
-  margin:.5rem 0; */
-/*display: inline-flex;
-justify-content: space-around;
-flex-wrap: wrap;
-align-content: flex-start;
-overflow: scroll;
-
-*/
 
 .fa {
   font-size: 1.5rem;
@@ -115,7 +151,7 @@ overflow: scroll;
 .social-media {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  gap: 1rem;
+  gap: 0.25rem;
 }
 .social-links {
   display: grid;
@@ -142,47 +178,115 @@ a:hover {
 a:active {
   color: #e76c15;
 }
-
-/* syles for - Mobile phones */
-@media only screen and (min-width: 375) {
-  h1 {
-    font-size: 2.5rem;
-    color: #8a817c;
-  }
-  body {
-    padding: 2rem;
-    font-size: 1.25rem;
-  }
-  .wrapper {
-    width: 100%;
-  }
-
-  p,
-  .about-me {
-    padding: 0;
-
-    color: rgb(233, 180, 180);
-  }
-  .social-media {
-    grid-template-columns: 1fr;
-    gap: 0.25rem;
-  }
+form {
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1) ;
 }
 
+form label{
+  display:block;
+  margin-bottom:5 px;
+  font-size: 1 rem;
+  color:#333;
+}
+
+
+#messages{
+  margin:20 px auto;
+  padding: 20px;
+  border-radius: 8px;
+  background-color: #f4f4f4;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  display: none;
+}
+
+.message-container{
+  overflow-y: auto;
+}
+
+.message-list{
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+display: flex;
+justify-content: space-between;
+flex-direction: column; /*vertically*/
+
+}
+
+.message-list .remove-button{
+  
+    background-color: rgb(236, 221, 221);
+    color:#1a1919;
+    border:1px solid #ebc9ac;
+    padding:5px 10px;
+    border-radius:10px;
+    cursor:pointer;
+    font-size:0.875;
+  margin-left: 0.5rem;
+  }
+
+  #skills-list{
+    list-style-type:none;
+    padding:0;
+    margin:0;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+
+  }
+  #skills-list li{
+    margin:10px;
+  }
+}
 /* styles for screens tablets*/
 @media only screen and (min-width: 768px) {
   body {
     padding: 1rem;
+    width:100%;
   }
   .wrapper {
     width: 100%;
+    
   }
+h1{
+  font-size: 3rem;
+  color: #8a817c;
+  line-height:3rem;
 
+}
+h2{
+  font-size:2 rem;
+
+}
   p,
   .about-me {
     padding: 0;
-
+font-size: 1.5 rem;
     color: #6f5170;
+  }
+  img{
+    width:75%;
+    float: right;
+  border-radius: 8%;
+  height: auto;
+  box-shadow: 10px 5px 10px #8a817c;
+  }
+
+  nav >ul{
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  ul{
+    margin:20px;
+    font-size:1.25;
+  }
+  li{
+    display:inline-block;
   }
   .social-media {
     grid-template-columns: 1fr;
@@ -191,27 +295,55 @@ a:active {
 }
 /* for screens laptops */
 @media only screen and (min-width: 992px) {
-  h1 {
-    font-size: 65px;
-    color: rgb(97, 102, 104);
-  }
+  
   body {
     padding: 3rem;
+    font-size: 1.5 rem;
   }
   .wrapper {
     max-width: 1200px;
     margin: auto;
   }
+  h1 {
+    font-size: 4rem;
+    color: rgb(97, 102, 104);
+  }
 
+  h2{
+    font-size: 1.75rem;
+  }
+  img{
+    width:50%;
+      float: right;
+    border-radius: 8%;
+    height: auto;
+    box-shadow: 10px 5px 10px #8a817c;
+    }
+    
+
+  }
   p,
   .about-me {
     padding: 2rem;
-
+font-size: 1.75rem;
     background-color: rgb(241, 231, 218);
+  }
+
+  nav>ul {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  ul {
+    margin: 30px;
+    font-size: 1.5 rem;
+  }
+  li{
+    display: inline-block;
   }
   .social-media {
     grid-template-columns: 1fr;
-    gap: 2rem;
+    gap: 1rem;
   }
   .grid-container > div {
     gap: 15px;
@@ -245,21 +377,8 @@ a:active {
   padding: 20px 0;
   font-size: 17px;
 }
-#skills-list {
-  list-style-type: none;
-  padding: 0;
-}
-#skills-list li {
-  margin: 10px;
-}
-form{
-  margin: 0 auto;
-  padding: 20px;
-  border-radius: 8px;
-  background-color:#f9f9f9;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1)
-}
 
+<<<<<<< HEAD
 form label{
   display:block;
   margin-bottom:5 px;
@@ -307,3 +426,5 @@ form label{
   font-size:0.875;
 margin-left: 0.5rem;
 }
+=======
+>>>>>>> origin/lesson-14
