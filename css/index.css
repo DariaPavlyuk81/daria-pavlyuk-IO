@@ -12,7 +12,7 @@ h1 {
   color: #463f3a;
   font-size: 50px;
   font-weight: 60;
-  text-align: center;
+  text-align: left;
   font-family: cursive;
   padding: 25px 0;
   margin-bottom: 25px;
@@ -23,8 +23,10 @@ h2 {
   font-size: 35px;
   font-weight: 200;
   font-family: modern;
-  padding: 25;
+  padding: 25px 0;
   line-height: 24px;
+  text-align:left;
+  margin-bottom: auto;
 }
 p {
   color: #131211;
@@ -37,7 +39,7 @@ a {
 }
 
 section {
-  text-align: center;
+  text-align: left;
   margin: 25px;
 }
 h1,
@@ -69,9 +71,9 @@ a {
 }
 
 img {
-  float: right;
+  float:inline-end;
   border-radius: 8%;
-  width: 25%;
+  width: 20%;
   height: auto;
   box-shadow: 10px 5px 10px #8a817c;
 }
@@ -81,7 +83,7 @@ img {
 nav > ul {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: left;
   gap: initial;
 }
 #navbar a {
@@ -119,7 +121,7 @@ overflow: scroll;
   display: grid;
   grid-template-columns: columns;
   gap: 0.5rem;
-  text-align: center;
+  text-align: left;
 }
 .social-links > a {
   width: auto;
@@ -287,7 +289,7 @@ form label{
   margin:0;
   display:flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: left;
 
 }
 
