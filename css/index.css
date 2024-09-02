@@ -17,15 +17,10 @@ body {
 h1 {
   
   color: #463f3a;
-<<<<<<< HEAD
   font-size: 50px;
   font-weight: 60;
   text-align: left;
-=======
-  font-size: 2.5rem;
   font-weight: 600;
-  text-align: center;
->>>>>>> origin/lesson-14
   font-family: cursive;
   padding: 25px 0;
   margin-bottom: 25px;
@@ -41,14 +36,8 @@ h2 {
   line-height: 1.5rem;
   background-color: #f0d9c5;
   font-weight: 200;
-<<<<<<< HEAD
-  font-family: modern;
-  padding: 25px 0;
-  line-height: 24px;
   text-align:left;
   margin-bottom: auto;
-=======
->>>>>>> origin/lesson-14
 }
 
 
@@ -75,7 +64,6 @@ li {
   color: #8a817c;
 }
 
-<<<<<<< HEAD
 section {
   text-align: left;
   margin: 25px;
@@ -96,8 +84,6 @@ li {
   display: inline;
   color: #8a817c;
 }
-=======
->>>>>>> origin/lesson-14
 a {
   color: #8a817c;
   display: block;
@@ -117,11 +103,7 @@ section{
 img {
   float:inline-end;
   border-radius: 8%;
-<<<<<<< HEAD
   width: 20%;
-=======
-  width: 100%;
->>>>>>> origin/lesson-14
   height: auto;
   box-shadow: 10px 5px 10px #8a817c;
 }
@@ -231,15 +213,23 @@ flex-direction: column; /*vertically*/
 
   #skills-list{
     list-style-type:none;
-    padding:0;
-    margin:0;
+    padding: 0;
+    margin: 0 ;
     display: flex;
     justify-content: space-between;
-    flex-direction: row;
+    flex-direction: column;
+    
+
 
   }
   #skills-list li{
-    margin:10px;
+    margin:10px 0;
+    padding: 10px;
+    background-color: #ebc9ac;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
   }
 }
 /* styles for screens tablets*/
@@ -348,7 +338,7 @@ font-size: 1.75rem;
   .grid-container > div {
     gap: 15px;
   }
-}
+
 
 .item-1 {
   grid-area: name;
@@ -378,7 +368,6 @@ font-size: 1.75rem;
   font-size: 17px;
 }
 
-<<<<<<< HEAD
 form label{
   display:block;
   margin-bottom:5 px;
@@ -392,6 +381,7 @@ form label{
   background-color: #f4f4f4;
   box-shadow: 0 0 10px rgba(0,0,0,0.1);
   display:none;
+  border: 1px solid black;
 }
 #messages h2{
   font-size:1.5 rem;
@@ -426,5 +416,3 @@ form label{
   font-size:0.875;
 margin-left: 0.5rem;
 }
-=======
->>>>>>> origin/lesson-14
