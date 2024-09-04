@@ -104,18 +104,6 @@ messageList.appendChild(newMessage);
 //reset the form
 event.target.reset();
 
-//callback for remove button
-function onRemoveButton(event) {
-    const entry =event.target.parentNode;
-    entry.remove();
-
-    const messageSection = document.getElementById("messages");
-    const messageList = messageSection. getElementsByTagName("li");
-    if (messageList.length === 0){
-        messageSection.style.display = "none";
-
-    }
-}
 
 
     
