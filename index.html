@@ -18,9 +18,6 @@
   </head>
   
   <body>
-    <section id="banner">
-    <img  class = "img-banner" src="img/banner.png" alt ="profile banner">
-  </section>
     <section>
     <nav id="navbar">
       <ul>
@@ -90,7 +87,7 @@
 
 </section>
     
-    <!-- </section> -->
+     
     <section id="skills-section">
       <h2 id="skills">Skills:</h2>
       <ul id="skills-list"></ul>
@@ -137,6 +134,41 @@
     </ul>
     </section>
     </div>
+    <section>
+      <h2>Leave a Message:</h2>
+      <form id="messageForm" name="leave_message" autocomplete="on">
+        <label for="usersName">Users Name:</label>
+        <input
+        type="text"
+        name="usersName"
+        id="usersName"
+        required
+        /><br />
+        <label for="email">Email:
+        </label>
+        <input
+        type="email"
+        name="usersEmail"
+        id="email"
+        required 
+        autocomplete="on"
+        /><br />
+        <label for="usersMessage"> Users Message:  </label>
+        <textarea id="usersMessage"
+        name="usersMessage"
+        required ></textarea>
+
+        <br />
+        <button type="submit" class="button" name="submitButton">Submit</button>
+      </form>
+        </section>
+        <section id="messages">
+          <h2>Messages</h2>
+          <div class="message-container">
+            <ul></ul>
+</div>
+        </section>
+
     <script src="js/index.js"></script>
   </body>
 </html>

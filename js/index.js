@@ -1,7 +1,6 @@
 //create a footer element
 const footer = document.createElement ("footer");
-// footer.className = "footer";
-// footer.setAttribute("id","myfooter");
+
 document.body.appendChild(footer);
 
 const today = new Date();
@@ -34,23 +33,101 @@ const skillsList = skillsSection.getElementsByTagName("ul")[0];
 
 for (let i = 0; i< skills.length; i++)
 {
-    const skill = document.createElement("li");
+    const skill = document.createElement("LI");
 
     skill.innerText = skills[i];
     
     skillsList.appendChild(skill);
     
 }
-//add new skill
-// const skillButton = document.getElementById("skill-button");
-// skillButton.addEventListener("click", ()=>{
-//     const newSkill = promt("Add a skill:");
-//     console.log("newSkill:", newSkill);
-//     const skillsList = document.querySelector(".skills");
-//     const li = document.createElement("li");
-//     li.innerText = newSkill;
-skillsList.appendChild(li);
-//     skillsList.append(newSkill);
-//     console.log(skillsList);
+//find the leave messages form and add the callback for submit
+const messageForms = document.getElementsByName("leave_message");
+const messageForm= messageForms[0];
 
-//}
+//Attach the listener
+messageForm.addEventListener("submit", onFormSubmit);
+
+//callback for submit
+function onFormSubmit(event){
+    event.preventDefault();
+
+    const formData = new FormData(event.target);
+
+    const userName = formData.get("usersName");
+    const email = formData.get("usersEmail");
+    const userMessage = formData.get("usersMessage");
+    
+
+    const messageSection = document.getElementById("messages");
+
+    messageSection.style.display = "block";
+
+//display message beneath messages section
+const messageList = messageSection.querySelector("ul");
+
+
+    //display the message section
+
+const newMessage = document.createElement("li");
+newMessage.classList.add("message-list");
+const newMessageContent = `<a href="mailto:${email}">${userName}</a>
+<span>${userMessage}</span>`;
+newMessage.innerHTML = newMessageContent;
+
+
+//Add a remove button
+const removeButton = document.createElement("button");
+removeButton.textContent = "Remove";
+removeButton.type ="button";
+removeButton.classList.add("remove-button");
+removeButton.name = "remove-button";
+
+
+//add event listener
+removeButton.addEventListener("click",(event)=>{
+    const entry = event.target.parentNode;
+    entry.remove();
+
+    const messageSection = document.getElementById ("messages");
+    const messageList = messageSection.getElementsByTagName("ul")[0];
+    if (messageList.children.length=== 0){
+        messageSection.style.display ="none";
+    }
+});
+
+
+//Add remove Button
+newMessage.appendChild(removeButton);
+//add message
+messageList.appendChild(newMessage);
+
+//reset the form
+event.target.reset();
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+}
+//callback for remove button
+function onRemoveButton(event){
+    const entry = event.target.parentNode;
+    entry.remove();
+
+    const messageSection = document.getElementById("messages");
+    const messageList = messageSection.getElementsByTagName("li");
+    if (messageList.length === 0){
+        messageSection.style.display = "none";
+    }
+}
