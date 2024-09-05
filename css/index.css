@@ -193,7 +193,7 @@
     margin-left: 0.5rem;
   }
 
-  #skills-list {
+  #skills-list, #projects-list {
     list-style-type: none;
     padding: 0;
     margin: 0;
@@ -203,7 +203,7 @@
 
   }
 
-  #skills-list li {
+  #skills-list li, #projects-list li {
     margin: 10px 0;
     padding: 10px;
     border-radius: 5px;
@@ -212,6 +212,7 @@
     font-size: 1.25rem;
 
   }
+  
 
   ul {
     list-style-type: none;
