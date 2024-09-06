@@ -145,8 +145,13 @@ const projectList = projectSection.getElementsByTagName("UL");
 //create the repostories list by adding to the html
  for (let i=0; i < repositories.length; i++){
     const project = document.createElement("LI");
-    project.innerText = repositories[i].html_url;
-     console.log("Appending project:", project);
+    const repoUrl = repositories[i].html_url;
+
+    const projectLink = document.createElement("a");
+    projectLink.href = repoUrl;
+    projectLink.textContent = repoUrl;
+    project.appendChild(projectLink);
+    
      projectList[0].appendChild(project);
  }
 })
