@@ -103,23 +103,9 @@ messageList.appendChild(newMessage);
 
 //reset the form
 event.target.reset();
-
-
-
-    
-
-
-
-
-
-
-
-
-
-
-
-
 }
+
+
 //callback for remove button
 function onRemoveButton(event){
     const entry = event.target.parentNode;
@@ -131,3 +117,45 @@ function onRemoveButton(event){
         messageSection.style.display = "none";
     }
 }
+// get the repositories from github
+const userName = "DariaPavlyuk81";
+fetch(`https://api.github.com/users/${userName}/repos`)
+
+//get the response
+.then((response) => {
+    if(!response.ok){
+        throw new Error("Request failed");
+    }
+    return response.json();
+})
+
+//get the data and add it to the html
+.then((data) => {
+    console.log("JSON  data:", data);
+    const repositories = [...data];
+    console.log("Repositories array:",repositories);
+
+
+//find the project section
+const projectSection = document.getElementById("projects-section");
+const projectList = projectSection.getElementsByTagName("UL");
+
+
+
+//create the repostories list by adding to the html
+ for (let i=0; i < repositories.length; i++){
+    const project = document.createElement("LI");
+    const repoUrl = repositories[i].html_url;
+
+    const projectLink = document.createElement("a");
+    projectLink.href = repoUrl;
+    projectLink.textContent = repoUrl;
+    project.appendChild(projectLink);
+    
+     projectList[0].appendChild(project);
+ }
+})
+.catch((error) => {
+    console.error("An error occurred:",error);
+
+ });
