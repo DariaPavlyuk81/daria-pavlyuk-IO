@@ -60,7 +60,8 @@ function onFormSubmit(event){
 
     const messageSection = document.getElementById("messages");
 
-    messageSection.style.display = "block";
+    //messageSection.style.display = "block";
+    messageSection.hidden = false;
 
 //display message beneath messages section
 const messageList = messageSection.querySelector("ul");
@@ -91,7 +92,8 @@ removeButton.addEventListener("click",(event)=>{
     const messageSection = document.getElementById ("messages");
     const messageList = messageSection.getElementsByTagName("ul")[0];
     if (messageList.children.length=== 0){
-        messageSection.style.display ="none";
+        //messageSection.hidden="none";
+        messageSection.hidden = true;
     }
 });
 
