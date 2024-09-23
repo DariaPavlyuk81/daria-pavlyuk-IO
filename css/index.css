@@ -1,6 +1,6 @@
 /*base styles (Mobiles)*/
 /* styles for - Mobile phones */
-@media only screen and (min-width: 375px) {
+/* @media only screen and (min-width: 375px) { */
 
   body {
     background-color: #efe5dcd8;
@@ -378,7 +378,7 @@
         max-width: 1200px;
         margin: auto;
       }
-
+    
       h1 {
         font-size: 3rem;
         color: rgb(97, 102, 104);
@@ -508,4 +508,5 @@
         font-size: 0.875;
         margin-left: 0.5rem;
       }
-    
+  
+  
