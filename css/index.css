@@ -162,7 +162,7 @@
     border-radius: 8px;
     background-color: #f4f4f4;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    display: none;
+    display: block;
     border: 1px solid black;
   }
 
@@ -365,7 +365,7 @@
       padding: 20px 0;
       font-size: 17px;
     }
-
+  }
     /* for screens laptops */
     @media only screen and (min-width: 992px) {
 
@@ -470,7 +470,7 @@
         border-radius: 8px;
         background-color: #f4f4f4;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        display: none;
+        display: block;
         border: 1px solid black;
       }
 
@@ -509,4 +509,4 @@
         margin-left: 0.5rem;
       }
   
-  
+    }

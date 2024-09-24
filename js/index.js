@@ -52,14 +52,12 @@ function onFormSubmit(event){
     event.preventDefault();
 
     const formData = new FormData(event.target);
-
     const userName = formData.get("usersName");
     const email = formData.get("usersEmail");
     const userMessage = formData.get("usersMessage");
     
 
     const messageSection = document.getElementById("messages");
-
     //messageSection.style.display = "block";
     messageSection.hidden = false;
 
@@ -67,8 +65,7 @@ function onFormSubmit(event){
 const messageList = messageSection.querySelector("ul");
 
 
-    //display the message section
-
+//display the message section
 const newMessage = document.createElement("li");
 newMessage.classList.add("message-list");
 const newMessageContent = `<a href="mailto:${email}">${userName}</a>
