@@ -1,244 +1,337 @@
 /*base styles (Mobiles)*/
 /* styles for - Mobile phones */
-@media only screen and (min-width: 375px) {
+/* @media only screen and (min-width: 375px) { */
 
+body {
+  background-color: #efe5dcd8;
+  font-family: "Poppins", sans-serif;
+  padding: 10px;
+  font-size: 1rem;
+}
+
+.wrapper {
+  margin: 0 auto;
+  width: 1000px;
+}
+
+h1 {
+  background-color: #ebc9ac;
+  color: #463f3a;
+  font-size: 2rem;
+  font-weight: 600;
+  text-align: left;
+  font-family: cursive;
+  padding: 15px 0;
+  margin-bottom: 25px;
+  line-height: 1.5rem;
+
+}
+
+h2 {
+  color: #2f2c2b;
+  font-size: 1.25rem;
+  font-family: "Modern", sans-serif;
+  padding: 15px;
+  line-height: 1.5rem;
+  background-color: #f0d9c5;
+  font-weight: 200;
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+
+p {
+  color: #131211;
+  font-size: 1rem;
+  font-family: "Modern", sans-serif;
+  padding: 15px;
+  background-color: #f0d9c5;
+}
+
+
+a {
+  color: #8a817c;
+  display: block;
+  padding: 8px;
+  background-color: rgb(247, 234, 234);
+  text-decoration: none;
+}
+
+
+li {
+  display: block;
+  color: #8a817c;
+}
+
+section {
+  text-align: left;
+  margin: 15px 0;
+}
+
+img {
+  float: right;
+  border-radius: 8%;
+  width: 150px;
+  height: auto;
+  box-shadow: 10px 5px 10px #8a817c;
+}
+
+.about-me {
+  padding: 15px;
+}
+
+nav>ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  gap: 0.5rem;
+
+}
+
+#navbar a {
+  display: block;
+  padding: 8px;
+  background-color: #f1c9a6;
+  text-decoration: none;
+}
+
+ul.a {
+  list-style-type: circle;
+}
+
+.fa {
+  font-size: 1.5rem;
+}
+
+.social-media {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 0.25rem;
+}
+
+.social-links {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 0.5rem;
+  text-align: left;
+}
+
+.social-links>a {
+  width: auto;
+}
+
+.social-links>a:link {
+  color: #463f3a;
+}
+
+a:visited {
+  color: hsla(240, 82%, 46%, 0.947);
+}
+
+a:focus {
+  color: #d816df;
+}
+
+a:hover {
+  color: #8ee8bb;
+}
+
+a:active {
+  color: #e76c15;
+}
+
+form {
+  margin: 0 auto;
+  padding: 15px;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 1rem;
+  color: #333;
+}
+
+
+#messages {
+  margin: 20px auto;
+  padding: 15px;
+  border-radius: 8px;
+  background-color: #f4f4f4;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  /* display: block; */
+  border: 1px solid black;
+}
+
+.message-container {
+  overflow-y: auto;
+}
+
+.message-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  /*vertically*/
+
+}
+
+.message-list .remove-button {
+
+  background-color: rgb(236, 221, 221);
+  color: #1a1919;
+  border: 1px solid #ebc9ac;
+  padding: 5px 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 0.875rem;
+  margin-left: 0.5rem;
+}
+
+#skills-list,
+#projects-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+
+}
+
+#skills-list li,
+#projects-list li {
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.25rem;
+
+}
+
+
+ul {
+  list-style-type: none;
+  margin: 10px 20px 30px 40px;
+  padding: 0;
+  font-family: monospace;
+  font-size: 17px;
+}
+
+li {
+  display: inline;
+  color: #8a817c;
+}
+
+a {
+  color: #8a817c;
+  display: block;
+  padding: 8px;
+  background-color: rgb(247, 234, 234);
+  text-decoration: none;
+}
+
+.accent-color {
+  color: #010101;
+  font-family: cursive;
+  font-size: 20px;
+}
+
+.grid-container>div {
+  gap: 15px;
+}
+
+
+.item-1 {
+  grid-area: name;
+}
+
+.item-2 {
+  grid-area: job;
+}
+
+.item-3 {
+  grid-area: date;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    "name job job job job job"
+    "name job job job job job"
+    "name date date date date date";
+  gap: 10px;
+  background-color: rgb(236, 221, 221);
+  padding: 10px;
+}
+
+.grid-container>div {
+  background-color: bisque;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 17px;
+}
+
+
+/* styles for screens tablets*/
+@media only screen and (min-width: 768px) {
   body {
-    background-color: #efe5dcd8;
-    font-family: "Poppins", sans-serif;
-    padding: 10px;
-    font-size: 1rem;
+    padding: 1rem;
+
   }
 
   .wrapper {
-    margin: 0 auto;
-    width: 1000px;
+    width: 100%;
   }
 
   h1 {
-    background-color: #ebc9ac;
-    color: #463f3a;
-    font-size: 2rem;
-    font-weight: 600;
-    text-align: left;
-    font-family: cursive;
-    padding: 15px 0;
-    margin-bottom: 25px;
-    line-height: 1.5rem;
-
+    font-size: 3rem;
   }
 
   h2 {
-    color: #2f2c2b;
+    font-size: 1.5rem;
+
+  }
+
+  p,
+  .about-me {
+    padding: 0;
     font-size: 1.25rem;
-    font-family: "Modern", sans-serif;
-    padding: 15px;
-    line-height: 1.5rem;
-    background-color: #f0d9c5;
-    font-weight: 200;
-    text-align: left;
-    margin-bottom: 10px;
-  }
-
-
-  p {
-    color: #131211;
-    font-size: 1rem;
-    font-family: "Modern", sans-serif;
-    padding: 15px;
-    background-color: #f0d9c5;
-  }
-
-
-  a {
-    color: #8a817c;
-    display: block;
-    padding: 8px;
-    background-color: rgb(247, 234, 234);
-    text-decoration: none;
-  }
-
-
-  li {
-    display: block;
-    color: #8a817c;
-  }
-
-  section {
-    text-align: left;
-    margin: 15px 0;
+    color: #6f5170;
   }
 
   img {
-    float: right;
-    border-radius: 8%;
     width: 150px;
-    height: auto;
-    box-shadow: 10px 5px 10px #8a817c;
-  }
 
-  .about-me {
-    padding: 15px;
   }
 
   nav>ul {
-    display: flex;
-    flex-direction: column;
-    justify-content: left;
-    gap: 0.5rem;
-
+    flex-direction: row;
+    justify-content: center;
   }
-
-  #navbar a {
-    display: block;
-    padding: 8px;
-    background-color: #f1c9a6;
-    text-decoration: none;
-  }
-
-  ul.a {
-    list-style-type: circle;
-  }
-
-  .fa {
-    font-size: 1.5rem;
-  }
-
-  .social-media {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    gap: 0.25rem;
-  }
-
-  .social-links {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 0.5rem;
-    text-align: left;
-  }
-
-  .social-links>a {
-    width: auto;
-  }
-
-  .social-links>a:link {
-    color: #463f3a;
-  }
-
-  a:visited {
-    color: hsla(240, 82%, 46%, 0.947);
-  }
-
-  a:focus {
-    color: #d816df;
-  }
-
-  a:hover {
-    color: #8ee8bb;
-  }
-
-  a:active {
-    color: #e76c15;
-  }
-
-  form {
-    margin: 0 auto;
-    padding: 15px;
-    border-radius: 8px;
-    background-color: #f9f9f9;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  }
-
-  form label {
-    display: block;
-    margin-bottom: 5px;
-    font-size: 1rem;
-    color: #333;
-  }
-
-
-  #messages {
-    margin: 20px auto;
-    padding: 15px;
-    border-radius: 8px;
-    background-color: #f4f4f4;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    display: none;
-    border: 1px solid black;
-  }
-
-  .message-container {
-    overflow-y: auto;
-  }
-
-  .message-list {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-    /*vertically*/
-
-  }
-
-  .message-list .remove-button {
-
-    background-color: rgb(236, 221, 221);
-    color: #1a1919;
-    border: 1px solid #ebc9ac;
-    padding: 5px 10px;
-    border-radius: 10px;
-    cursor: pointer;
-    font-size: 0.875rem;
-    margin-left: 0.5rem;
-  }
-
-  #skills-list, #projects-list {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-
-  }
-
-  #skills-list li, #projects-list li {
-    margin: 10px 0;
-    padding: 10px;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 1.25rem;
-
-  }
-  
 
   ul {
-    list-style-type: none;
-    margin: 10px 20px 30px 40px;
-    padding: 0;
-    font-family: monospace;
-    font-size: 17px;
+    margin: 20px;
+    font-size: 1.25rem;
   }
 
   li {
-    display: inline;
-    color: #8a817c;
+    display: inline-block;
   }
 
-  a {
-    color: #8a817c;
-    display: block;
-    padding: 8px;
-    background-color: rgb(247, 234, 234);
-    text-decoration: none;
+  .social-media {
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
   }
 
-  .accent-color {
-    color: #010101;
-    font-family: cursive;
-    font-size: 20px;
+  .social-links {
+    grid-template-columns: 1fr 1fr 1fr;
   }
 
   .grid-container>div {
@@ -276,235 +369,193 @@
     font-size: 17px;
   }
 
+  #messages {
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #f4f4f4;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    /* display: block; */
+    border: 1px solid black;
+  }
 
-  /* styles for screens tablets*/
-  @media only screen and (min-width: 768px) {
-    body {
-      padding: 1rem;
+  #messages h2 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+  }
 
-    }
+  .message-container {
+    overflow-y: auto;
+  }
 
-    .wrapper {
-      width: 100%;
-    }
+  .message-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: left;
+  }
 
-    h1 {
-      font-size: 3rem;
-    }
+  .message-list li span {
+    display: block;
+  }
 
-    h2 {
-      font-size: 1.5rem;
+  .message-list>.remove-button {
+    background-color: rgb(236, 221, 221);
+    color: #1a1919;
+    border: 1px solid #ebc9ac;
+    padding: 5px 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 0.875;
+    margin-left: 0.5rem;
+  }
+}
 
-    }
+/* for screens laptops */
+@media only screen and (min-width: 992px) {
 
-    p,
-    .about-me {
-      padding: 0;
-      font-size: 1.25rem;
-      color: #6f5170;
-    }
+  body {
+    padding: 3rem;
+    font-size: 1.5rem;
+  }
 
-    img {
-      width: 150px;
+  .wrapper {
+    max-width: 1200px;
+    margin: auto;
+  }
 
-    }
+  h1 {
+    font-size: 3rem;
+    color: rgb(97, 102, 104);
+  }
 
-    nav>ul {
-      flex-direction: row;
-      justify-content: center;
-    }
+  h2 {
+    font-size: 1.75rem;
+  }
 
-    ul {
-      margin: 20px;
-      font-size: 1.25rem;
-    }
+  img {
+    width: 175px;
 
-    li {
-      display: inline-block;
-    }
+  }
 
-    .social-media {
-      grid-template-columns: 1fr 1fr 1fr;
-      gap: 1rem;
-    }
+  p,
+  .about-me {
+    padding: 2rem;
+    font-size: 1.25rem;
+    background-color: rgb(241, 231, 218);
+  }
 
-    .social-links {
-      grid-template-columns: 1fr 1fr 1fr;
-    }
-    .grid-container>div {
-      gap: 15px;
-    }
+  nav>ul {
+    flex-direction: row;
+    justify-content: center;
+  }
 
+  ul {
+    font-size: 1.5rem;
+  }
 
-    .item-1 {
-      grid-area: name;
-    }
+  li {
+    display: inline-block;
+  }
 
-    .item-2 {
-      grid-area: job;
-    }
+  .social-media {
+    grid-template-columns: repeat(4, 1fr);
 
-    .item-3 {
-      grid-area: date;
-    }
+  }
 
-    .grid-container {
-      display: grid;
-      grid-template-areas:
-        "name job job job job job"
-        "name job job job job job"
-        "name date date date date date";
-      gap: 10px;
-      background-color: rgb(236, 221, 221);
-      padding: 10px;
-    }
+  .social-links {
+    grid-template-columns: repeat(4, 1fr);
+  }
 
-    .grid-container>div {
-      background-color: bisque;
-      text-align: center;
-      padding: 20px 0;
-      font-size: 17px;
-    }
-
-    /* for screens laptops */
-    @media only screen and (min-width: 992px) {
-
-      body {
-        padding: 3rem;
-        font-size: 1.5rem;
-      }
-
-      .wrapper {
-        max-width: 1200px;
-        margin: auto;
-      }
-
-      h1 {
-        font-size: 3rem;
-        color: rgb(97, 102, 104);
-      }
-
-      h2 {
-        font-size: 1.75rem;
-      }
-
-      img {
-        width: 175px;
-
-      }
-
-      p,
-      .about-me {
-        padding: 2rem;
-        font-size: 1.25rem;
-        background-color: rgb(241, 231, 218);
-      }
-
-      nav>ul {
-        flex-direction: row;
-        justify-content: center;
-      }
-
-      ul {
-        font-size: 1.5rem;
-      }
-
-      li {
-        display: inline-block;
-      }
-
-      .social-media {
-        grid-template-columns: repeat(4, 1fr);
-
-      }
-
-      .social-links {
-        grid-template-columns: repeat(4, 1fr);
-      }
-
-      .grid-container>div {
-        gap: 15px;
-      }
+  .grid-container>div {
+    gap: 15px;
+  }
 
 
-      .item-1 {
-        grid-area: name;
-      }
+  .item-1 {
+    grid-area: name;
+  }
 
-      .item-2 {
-        grid-area: job;
-      }
+  .item-2 {
+    grid-area: job;
+  }
 
-      .item-3 {
-        grid-area: date;
-      }
+  .item-3 {
+    grid-area: date;
+  }
 
-      .grid-container {
-        display: grid;
-        grid-template-areas:
-          "name job job job job job"
-          "name job job job job job"
-          "name date date date date date";
-        gap: 10px;
-        background-color: rgb(236, 221, 221);
-        padding: 10px;
-      }
+  .grid-container {
+    display: grid;
+    grid-template-areas:
+      "name job job job job job"
+      "name job job job job job"
+      "name date date date date date";
+    gap: 10px;
+    background-color: rgb(236, 221, 221);
+    padding: 10px;
+  }
 
-      .grid-container>div {
-        background-color: bisque;
-        text-align: center;
-        padding: 20px 0;
-        font-size: 17px;
-      }
+  .grid-container>div {
+    background-color: bisque;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 17px;
+  }
 
-      form label {
-        display: block;
-        margin-bottom: 5px;
-        font-size: 1rem;
-        color: #333;
-      }
+  form label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 1rem;
+    color: #333;
+  }
 
-      #messages {
-        margin: 20px auto;
-        padding: 20px;
-        border-radius: 8px;
-        background-color: #f4f4f4;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        display: none;
-        border: 1px solid black;
-      }
+  #messages {
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #f4f4f4;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    /* display: block; */
+    border: 1px solid black;
+  }
 
-      #messages h2 {
-        font-size: 1.5rem;
-        color: #333;
-        margin-bottom: 20px;
-        text-align: center;
-      }
+  #messages h2 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+  }
 
-      .message-container {
-        overflow-y: auto;
-      }
+  .message-container {
+    overflow-y: auto;
+  }
 
-      .message-list {
-        list-style-type: none;
-        padding: 0;
-        margin: 0;
-        display: flex;
-        justify-content: space-between;
-        align-items: left;
-      }
+  .message-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: left;
+  }
 
-      .message-list li span {
-        display: block;
-      }
+  .message-list li span {
+    display: block;
+  }
 
-      .message-list>.remove-button {
-        background-color: rgb(236, 221, 221);
-        color: #1a1919;
-        border: 1px solid #ebc9ac;
-        padding: 5px 10px;
-        border-radius: 10px;
-        cursor: pointer;
-        font-size: 0.875;
-        margin-left: 0.5rem;
-      }
+  .message-list>.remove-button {
+    background-color: rgb(236, 221, 221);
+    color: #1a1919;
+    border: 1px solid #ebc9ac;
+    padding: 5px 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 0.875;
+    margin-left: 0.5rem;
+  }
+
+}
